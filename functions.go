@@ -2,7 +2,7 @@ package main
 
 import( //importação consignada
 	"fmt"
-	"math/rand" //estamos importando arquivos que começão com package rand
+	"math/rand" //estamos importando arquivos que comecem com package rand
 	"time"
 	"math"
 )
