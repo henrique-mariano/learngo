@@ -34,3 +34,9 @@ func Split(sum int) (x, y int) { //os valores de retorno podem ser nomeados e ag
 	y = sum - x     //deve-se ser usado apenas em funções curtas, pois elas podem prejudicar a legibilidade em funções longas
 	return
 }
+
+func TypeConversion(x, y int) (float64, uint) {
+	var f float64 = math.Sqrt(float64(x*x + y*y))
+	var z uint = uint(f)
+	return f, z
+}
