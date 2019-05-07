@@ -50,9 +50,9 @@ func main() {
 
 	functions.ExportedNames()
 
-	fmt.Println("Soma:", functions.Add(25, 12))
+	fmt.Println("Soma:", functions.Add(25, 12)) //Println -> imprime um valor com uma quebra de linha no final
 
-	a, b := functions.Swap("hello", "world")
+	a, b := functions.Swap("hello", "world") //atribuição multipla
 	fmt.Println("Swap:", a, b)
 
 	x, y := functions.Split(17)
@@ -73,4 +73,10 @@ func main() {
 
 	w, z := functions.TypeConversion(3, 4)
 	fmt.Println("Type Conversion:", w, z) //conversões de tipo em Go precisam ser explícitas
+
+	const Valor = "Oii"                    //constantes precisam ser declaradas utilizando a palavra-chave const, não é possível utilizar o operador := para definir uma constante
+	fmt.Println("Valor constante:", Valor) //uma constante sem tipo pega o tipo pelo seu contexto.
+
+	array := []int{2, 4, 6, 8, 10} //array de inteiros instanciados com os valores 2, 4, 6, 8, 10
+	fmt.Println("Somatório de um array:", array, "Soma:", functions.Sum(array))
 }
